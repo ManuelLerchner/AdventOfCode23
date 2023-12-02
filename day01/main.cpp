@@ -24,7 +24,8 @@ bool substring_starts_at(const std::string& str, const std::string& substr, int 
 int main() {
   auto input = FileUtils::loadFile("day01/calibration_data.txt");
 
-  std::unordered_map<std::string, int> digits = {{"one", 1}, {"two", 2}, {"three", 3}, {"four", 4}, {"five", 5}, {"six", 6}, {"seven", 7}, {"eight", 8}, {"nine", 9}};
+  std::unordered_map<std::string, int> digits = {{"one", 1}, {"two", 2},   {"three", 3}, {"four", 4}, {"five", 5},
+                                                 {"six", 6}, {"seven", 7}, {"eight", 8}, {"nine", 9}};
 
   auto find_combination = [&digits](std::string& line) {
     int res = 0;
