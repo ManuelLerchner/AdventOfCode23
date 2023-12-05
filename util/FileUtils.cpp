@@ -17,6 +17,10 @@ std::stringstream FileUtils::loadFile(const std::string& path) {
 
     std::ifstream file(fullPath);
 
+    if (!file.is_open()) {
+        throw std::runtime_error("Could not open file: " + fullPath);
+    }
+
     auto stringStream = std::stringstream();
     stringStream << file.rdbuf();
 
