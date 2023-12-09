@@ -148,7 +148,7 @@ auto determineValue(std::string hand) {
 }
 
 void part1() {
-    std::stringstream file = FileUtils::loadFile("day07/demo.txt");
+    std::stringstream file = FileUtils::loadFile("day07/graph.txt");
 
     auto hands = parse(file);
 
