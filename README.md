@@ -1,4 +1,4 @@
-# Advent of Code 2023 - Repository Name
+# Advent of Code 2023 
 
 This repository contains my solutions and code for the Advent of Code 2023 challenges.
 
